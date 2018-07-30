@@ -1,0 +1,1 @@
+export var myh1 = `<h1 style="color:black;"> Juan is cool </h1>`;

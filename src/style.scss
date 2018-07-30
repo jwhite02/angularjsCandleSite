@@ -1,0 +1,337 @@
+/* variables */
+
+$white-var:#fff;
+$underline: rgb(106, 30, 65);
+$duration-anim: 2s;
+$delay-anim: 0.5s;
+$delay-anim-phrase: 1.5s;
+$delay-anim-quote: 2.5s;
+@mixin svg-dem() {
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+@mixin the-duration() {
+    -webkit-animation-duration: $duration-anim;
+    -moz-animation-duration: $duration-anim;
+    -ms-animation-duration: $duration-anim;
+    -o-animation-duration: $duration-anim;
+    animation-duration: $duration-anim;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    background-color: $white-var;
+    text-rendering: optimizeLegibility;
+}
+
+.parallax-img01 {
+    /* The image used 1250 x 800 */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./imgs/kypie-tzexoba-bg.jpg);
+    /* Set a specific height */
+    min-height: 80rem;
+}
+
+.parallax-img02 {
+    /* The image used 1250 x 800 */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./imgs/candles.jpg);
+    /* Set a specific height */
+    min-height: 60rem;
+}
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.parallax-about {
+    /* The image is a small image */
+    background-image: url(./imgs/dust_scratches.png);
+    background-repeat: space;
+    width: 100%;
+}
+
+.parallax-products {
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.parallax-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(./imgs/contact-us.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.navigation-holder {
+    background-color: rgb(33, 27, 27);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./imgs/dust_scratches.png);
+    position: fixed;
+    width: 100vw;
+    top: 0%;
+    left: 0%; //transform: translate(-40%, -50%);
+    z-index: 100;
+}
+
+.mynav-shadow {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-phrase {
+    font-size: 1.8rem;
+}
+
+.header-text-bottom {
+    position: absolute;
+    height: 40%;
+    width: 50%;
+    bottom: 0;
+    left: 25%;
+    font-size: 2.6rem;
+}
+
+#mybrand {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+}
+
+.header-caption {
+    font-size: 6rem;
+}
+
+.contact-us-holder {
+    padding-bottom: 50rem;
+    padding-top: 5rem;
+}
+
+.contact-us div form div.form-group label {
+    font-size: 1.4rem;
+    margin-bottom: 0rem;
+}
+
+.product-holder {
+    padding-bottom: 9rem;
+    padding-top: 5rem;
+}
+
+.address-holder {
+    width: 30rem;
+    height: 30rem;
+    margin-left: 5rem;
+    margin-top: 7rem; //background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)); //background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(./imgs/rain.jpg);
+    //background-size: cover;
+    //border-radius: 50%; 
+}
+
+.myaddress {
+    padding: 9.5rem 3rem 0 0;
+}
+
+.footer-holder {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(rgba(5, 38, 57, 0.9), rgba(5, 38, 57, 0.8));
+}
+
+.underline {
+    color: $underline //#6A1E41
+}
+
+.underline:after {
+    display: block;
+    margin-top: 0.5rem;
+    font-family: FontAwesome; //content: "\2600"
+    font-size: 1.2rem; //content: "___";
+    // content: "\f005 \f005 \f005 \f005 \f005"; //content: url(./imgs/si-glyph-candle.svg);
+    // content: url(./imgs/lower-border.svg);
+    fill: orange;
+}
+
+.underline2 {
+    color: $white-var;
+}
+
+.underline2:after {
+    display: block;
+    margin-top: -35px;
+    font-family: FontAwesome;
+    color: orange; //content: "\2600"
+    content: "\f185"
+}
+
+.my-about {
+    color: black;
+}
+
+.margin-riser {
+    margin-top: -3.5rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+img~p {
+    font-size: 2rem;
+}
+
+.shadow {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.shadow-nohover {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+p.cand01 svg {
+    fill: #BD9158;
+    @include svg-dem();
+}
+
+p.cand02 svg {
+    fill: #F6C03F;
+    @include svg-dem();
+}
+
+p.cand03 svg {
+    fill: #49B022;
+    @include svg-dem();
+}
+
+p.cand04 svg {
+    fill: #62792C;
+    @include svg-dem();
+}
+
+p.cand05 svg {
+    fill: #A19F93;
+    @include svg-dem();
+}
+
+p.cand06 svg {
+    fill: #F16080;
+    @include svg-dem();
+}
+
+p.cand07 svg {
+    fill: #FC9826;
+    @include svg-dem();
+}
+
+p.cand08 svg {
+    fill: #B8C7F2;
+    @include svg-dem();
+}
+
+p.cand09 svg {
+    fill: #91AD77;
+    @include svg-dem();
+}
+
+p.cand10 svg {
+    fill: #91CBDF;
+    @include svg-dem();
+}
+
+#path2383,
+#path2390,
+#path2479,
+#path2481 {
+    fill: orange;
+    transform: scale(0.10) translate(70rem, 0);
+}
+
+.imgclass {
+    width: 96px;
+    fill: orange;
+}
+
+input:valid {
+    background-color: rgb(197, 230, 241);
+}
+
+input:invalid {
+    background-color: rgb(244, 154, 138);
+}
+
+input:required {
+    border-color: rgb(205, 232, 242);
+    border-width: 1px;
+}
+
+/* animation for header */
+
+#myheader-title {
+    @include the-duration();
+    -webkit-animation-delay: $delay-anim;
+    -moz-animation-delay: $delay-anim;
+    -ms-animation-delay: $delay-anim;
+    -o-animation-delay: $delay-anim;
+    animation-delay: $delay-anim;
+}
+
+#phrase {
+    @include the-duration();
+    -webkit-animation-delay: $delay-anim-phrase;
+    -moz-animation-delay: $delay-anim-phrase;
+    -ms-animation-delay: $delay-anim-phrase;
+    -o-animation-delay: $delay-anim-phrase;
+    animation-delay: $delay-anim-phrase;
+}
+
+#quote {
+    @include the-duration();
+    -webkit-animation-delay: $delay-anim-quote;
+    -moz-animation-delay: $delay-anim-quote;
+    -ms-animation-delay: $delay-anim-quote;
+    -o-animation-delay: $delay-anim-quote;
+    animation-delay: $delay-anim-quote;
+}

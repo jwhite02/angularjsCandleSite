@@ -1,0 +1,49 @@
+{
+  "name": "recipesite",
+  "version": "1.0.0",
+  "description": "this is a site for showing recipes",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build2": "npm run clean && webpack --watch",
+    "build": "npm run clean && webpack",
+    "dev": "webpack-dev-server --open",
+    "prod": "webpack -p",
+    "FIXFIX": "webpack --progress --profile --colors --display-error-details --display-cached"
+  },
+  "repository": {
+    "type": "git",
+    "url": "to-be-given"
+  },
+  "keywords": [
+    "recipe",
+    "blog"
+  ],
+  "author": "J White",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.2.0",
+    "node-sass": "^4.8.3",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.20.3",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.2"
+  },
+  "dependencies": {
+    "angular": "^1.6.9",
+    "animate.css": "^3.6.1",
+    "aos": "^2.2.0",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "jquery-smooth-scroll": "^2.2.0",
+    "popper.js": "^1.14.3"
+  }
+}

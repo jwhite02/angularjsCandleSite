@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cheesecake Recipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+</head>
+
+<body>
+    <!-- navigation -->
+    <section class="navigation-holder mynav-shadow">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark  ">
+                <a id="mybrand" class="navbar-brand" href="#home">KT</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto pr-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- header -->
+    <section class="header jumbotron parallax parallax-img01 mt-5" id="home">
+        <div class="mycontainer">
+            <div class="header-text-box">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-4 pr-5 header-phrase animated fadeInLeft" id="phrase">Where our candles ignite your surroundings to minister and mesmerize your spirit, body, and mind
+                            and bring pleasure to your inter-soul. The sense of smell is the strongest of all five of the
+                            human senses. It triggers memories, relaxes the mind and invigorates the soul. The use of aroma
+                            is evident even in Biblical acts in both the Old and New Testament. </div>
+                        <div class="col-8 header-caption animated fadeInRight" id="myheader-title" ng-controller="firstCont">Welcome To Kypie Tzexoba <!-- {{myheader}} --> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-text-bottom">
+                <div class="mt-5 animated fadeInUp" id="quote">
+                    <i class="fa fa-quote-left align-text-top" style="font-size: 1.5rem;"></i>All thy garments smell of myrrh, and aloes, and cassia, out of the ivory palaces, whereby they have
+                    made thee glad.
+                    <i class="fa fa-quote-right align-text-top" style="font-size: 1.5rem;"></i>
+                    <cite class="pl-3"> Psalms 45:8</cite>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- section 2 About Us -->
+    <div class="margin-riser parallax parallax-about" style="padding-bottom: 5rem; padding-top: 5rem;" id="about">
+        <div class="container ">
+            <div class="my-about">
+                <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-offset="-300" data-aos-easing="ease-in-sine" data-aos-delay="300"
+                    data-aos-duration="550">
+                    <h1 class="text-center underline">About Us</h1>
+                    <img class="imgclass d-block mx-auto" src=<%=require("./imgs/divider-purple.svg") %> alt="" >
+                </div>
+
+                <!-- <svg-icon version="1.1" width="300" height="200" >
+                    <src  href="./imgs/divider6.svg"   />
+                </svg-icon> -->
+
+                <p class="my-5 pb-2 text-center">Kypie Tzexoba is a Christian Company whose mission is to provide quality products, which enhance and bless
+                    the lives of its customers. Our commitment is to serve Christ by serving you, our customers, with products
+                    with ingredients provided by God.</p>
+            </div>
+            <div class="my-about">
+                <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-offset="-300" data-aos-easing="ease-in-sine" data-aos-delay="300"
+                    data-aos-duration="550">
+                    <h1 class="text-center underline ">Why Choose Kypie Tzeoba?</h1>
+                    <img class="imgclass d-block mx-auto" src=<%=require("./imgs/divider-purple.svg") %> alt="">
+                </div>
+
+                <p class="my-5 pb-2 text-center">Kypie Tzexoba commitment to Christ causes us to bring all our customers
+                    <i>Superb</i> products at affordable and nominal pricing. Excellent quality of natural based products. Exceptional
+                    customer service with integrity and honesty.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 3 Products -->
+    <section class="product-holder parallax parallax-products" id="products">
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-offset="-300" data-aos-easing="ease-in-sine" data-aos-delay="300"
+            data-aos-duration="550">
+            <h1 class="text-center underline ">Candle Aromas</h1>
+            <img class="imgclass d-block mx-auto pb-5" src=<%=require("./imgs/divider-purple.svg") %> alt="">
+        </div>
+        <div class="d-flex flex-wrap">
+            <div class="my-2 pb-4 mx-auto  bg-white shadow" style="width: 30rem; overflow: hidden; border-radius: 1px;" data-aos="fade-up"
+                data-aos-offset="-300" data-aos-delay="300" data-aos-anchor-placement="top-center">
+                <img src=<%=require("./imgs/Cappuccino-Hazelnut-300x200.jpg") %> alt="Description of Image" class="d-block img-fluid">
+                <div class="px-2 py-2">
+                    <p class="mb-0 small text-uppercase mb-1 text-dark text-center cand01">
+                        <svg-icon>
+                            <src href=<%=require("./imgs/candle3.svg") %> />
+                        </svg-icon>
+                    </p>
+                    <h2 class="text-dark text-center mt-0 mb-2" style="line-height: 1.25;">
+                        Cappuccino Hazelnut
+                    </h2>
+                    <p class="mb-1 text-dark text-center">
+                        This scent has the aroma of fresh brewed Cappuccino cup flavored with hazelnut creamer.
+                    </p>
+                </div>
+                <!-- <a href="#0" class="text-uppercase d-inline-block text-center ml-2 mb-2 text-center styled-link">
+                Read More
+            </a> -->
+            </div>
+            <div class="my-2 pb-4 mx-auto  bg-white shadow" style="width: 30rem; overflow: hidden; border-radius: 1px;" data-aos="fade-up"
+                data-aos-offset="-300" data-aos-delay="400" data-aos-anchor-placement="top-center">
+                <img src=<%=require("./imgs/CinnamonOrange-300x200.jpg") %> alt="Description of Image" class="d-block img-fluid">
+                <div class="px-2 py-2">
+                    <p class="mb-0 small text-uppercase mb-1 text-dark text-center cand02">
+                        <svg-icon>
+                            <src href=<%=require("./imgs/candle3.svg") %> />
+                        </svg-icon>
+                    </p>
+                    <h2 class="font-weight-normal text-dark text-center mt-0 mb-2" style="line-height: 1.25;">
+                        Cinnamon Orange
+                    </h2>
+                    <p class="mb-1 text-dark text-center">
+                        Topped with dried orange peel and cinnamon that produces a warm, spicy and comforting fragrance.
+                    </p>
+                </div>
+                <!-- <a href="#0" class="text-uppercase d-inline-block text-center ml-2 mb-2 text-center styled-link">
+                Read More
+            </a> -->
+            </div>
+            <div class="my-2 pb-4 mx-auto  bg-white shadow" style="width: 30rem; overflow: hidden; border-radius: 1px;" data-aos="fade-up"
+                data-aos-offset="-300" data-aos-delay="500" data-aos-anchor-placement="top-center">
+                <img src=<%=require("./imgs/Eucalyptus-Mint-300x200.jpg") %> alt="Description of Image" class="d-block img-fluid">
+                <div class="px-2 py-2">
+                    <p class="mb-0 small text-uppercase mb-1 text-dark text-center cand03">
+                        <svg-icon>
+                            <src href=<%=require("./imgs/candle3.svg") %> />
+                        </svg-icon>
+                    </p>
+                    <h2 class="font-weight-normal text-dark text-center mt-0 mb-2" style="line-height: 1.25;">
+                        Eucalyptus Mint
+                    </h2>
+                    <p class="mb-1 text-dark text-center">
+                        Extremely relaxing, crisp and uplifting fragrance which creates a fresh and clean atmosphere.
+                    </p>
+                </div>
+                <!-- <a href="#0" class="text-uppercase d-inline-block text-center ml-2 mb-2 text-center styled-link">
+                Read More
+            </a> -->
+            </div>
+            <div class="my-2 pb-4 mx-auto  bg-white shadow" style="width: 30rem; overflow: hidden; border-radius: 1px;" data-aos="fade-up"
+                data-aos-offset="-300" data-aos-delay="600" data-aos-anchor-placement="top-center">
+                <img src=<%=require("./imgs/Gardenia-300x200.jpg") %> alt="Description of Image" class="d-block img-fluid">
+                <div class="px-2 py-2">
+                    <p class="mb-0 small text-uppercase mb-1 text-dark text-center cand04">
+                        <svg-icon>
+                            <src href=<%=require("./imgs/candle3.svg") %> />
+                        </svg-icon>
+                    </p>
+                    <h2 class="font-weight-normal text-dark text-center mt-0 mb-2" style="line-height: 1.25;">
+                        Gardenia
+                    </h2>
+                    <p class="mb-1 text-dark text-center">
+                        This potent, fresh and robust floral fragrance is created with Jasmine, Rose, Clove and Sandalwood.
+                    </p>
+                </div>
+                <!-- <a href="#0" class="text-uppercase d-inline-block text-center ml-2 mb-2 text-center styled-link">
+                Read More
+            </a> -->
+            </div>
+            <div class="my-2 pb-4 mx-auto  bg-white shadow" style="width: 30rem; overflow: hidden; border-radius: 1px;" data-aos="fade-up"
+                data-aos-offset="-300" data-aos-delay="300" data-aos-anchor-placement="top-center">
+                <img src=<%=require("./imgs/Honeysuckle2.jpg") %> alt="Description of Image" class="d-block img-fluid">
+                <div class="px-2 py-2">
+                    <p class="mb-0 small text-uppercase mb-1 text-dark text-center cand05">
+                        <svg-icon>
+                            <src href=<%=require("./imgs/candle3.svg") %> />
+                        </svg-icon>
+                    </p>
+                    <h2 class="font-weight-normal text-dark text-center mt-0 mb-2" style="line-height: 1.25;">
+                        Honeysuckle
+                    </h2>
+                    <p class="mb-1 text-dark text-center">
+                        This fragrance is a fresh honeysuckle blend with hints of jasmine, rose and lilac.
+                    </p>
+                </div>
+                <!-- <a href="#0" class="text-uppercase d-inline-block text-center ml-2 mb-2 text-center styled-link">
+                Read More
+            </a> -->
+            </div>
+            <div class="my-2 pb-4 mx-auto  bg-white shadow" style="width: 30rem; overflow: hidden; border-radius: 1px;" data-aos="fade-up"
+                data-aos-offset="-300" data-aos-delay="400" data-aos-anchor-placement="top-center">
+                <img src=<%=require("./imgs/Love-Spell-300x200.jpg") %> alt="Description of Image" class="d-block img-fluid">
+                <div class="px-2 py-2">
+                    <p class="mb-0 small text-uppercase mb-1 text-dark text-center cand06">
+                        <svg-icon>
+                            <src href=<%=require("./imgs/candle3.svg") %> />
+                        </svg-icon>
+                    </p>
+                    <h2 class="font-weight-normal text-dark text-center mt-0 mb-2" style="line-height: 1.25;">
+                        Love Spell
+                    </h2>
+                    <p class="mb-1 text-dark text-center">
+                        Fruity Fresh citrus fragrance with a base note of vanilla, middle-note of peach, black currant and rose petals and top-note
+                        of grapefruit, apple, strawberries and clementines.
+                    </p>
+                </div>
+                <!-- <a href="#0" class="text-uppercase d-inline-block text-center ml-2 mb-2 text-center styled-link">
+                Read More
+            </a> -->
+            </div>
+            <div class="my-2 pb-4 mx-auto  bg-white shadow" style="width: 30rem; overflow: hidden; border-radius: 1px;" data-aos="fade-up"
+                data-aos-offset="-300" data-aos-delay="500" data-aos-anchor-placement="top-center">
+                <img src=<%=require("./imgs/Mango.jpg") %> alt="Description of Image" class="d-block img-fluid">
+                <div class="px-2 py-2">
+                    <p class="mb-0 small text-uppercase mb-1 text-dark text-center cand07">
+                        <svg-icon>
+                            <src href=<%=require("./imgs/candle3.svg") %> />
+                        </svg-icon>
+                    </p>
+                    <h2 class="font-weight-normal text-dark text-center mt-0 mb-2" style="line-height: 1.25;">
+                        Island Mango
+                    </h2>
+                    <p class="mb-1 text-dark text-center">
+                        A tropical blend of passion fruit and sweet ripen diced Haden mangoes creates this aroma
+                    </p>
+                </div>
+                <!-- <a href="#0" class="text-uppercase d-inline-block text-center ml-2 mb-2 text-center styled-link">
+                Read More
+            </a> -->
+            </div>
+            <div class="my-2 pb-4 mx-auto  bg-white shadow" style="width: 30rem; overflow: hidden; border-radius: 1px;" data-aos="fade-up"
+                data-aos-offset="-300" data-aos-delay="600" data-aos-anchor-placement="top-center">
+                <img src=<%=require("./imgs/Lavender-300x200.jpg") %> alt="Description of Image" class="d-block img-fluid">
+                <div class="px-2 py-2">
+                    <p class="mb-0 small text-uppercase mb-1 text-dark text-center cand08">
+                        <svg-icon>
+                            <src href=<%=require("./imgs/candle3.svg") %> />
+                        </svg-icon>
+                    </p>
+                    <h2 class="font-weight-normal text-dark text-center mt-0 mb-2" style="line-height: 1.25;">
+                        Lavender
+                    </h2>
+                    <p class="mb-1 text-dark text-center">
+                        The flowery smell of Lavender is calming, relaxing, restful sleep, stress reliever and mood uplifting.
+                    </p>
+                </div>
+                <!-- <a href="#0" class="text-uppercase d-inline-block text-center ml-2 mb-2 text-center styled-link">
+                Read More
+            </a> -->
+            </div>
+            <div class="my-2 pb-4 mx-auto  bg-white shadow" style="width: 30rem; overflow: hidden; border-radius: 1px;" data-aos="fade-up"
+                data-aos-offset="-300" data-aos-delay="400" data-aos-anchor-placement="top-center">
+                <img src=<%=require("./imgs/lemonGrass-300x200.jpg") %> alt="Description of Image" class="d-block img-fluid">
+                <div class="px-2 py-2">
+                    <p class="mb-0 small text-uppercase mb-1 text-dark text-center cand09">
+                        <svg-icon>
+                            <src href=<%=require("./imgs/candle3.svg") %> />
+                        </svg-icon>
+                    </p>
+                    <h2 class="font-weight-normal text-dark text-center mt-0 mb-2" style="line-height: 1.25;">
+                        Lemongrass
+                    </h2>
+                    <p class="mb-1 text-dark text-center">
+                        A classic lemon refreshing, citrusy scent that will soothe your soul.
+                    </p>
+                </div>
+                <!-- <a href="#0" class="text-uppercase d-inline-block text-center ml-2 mb-2 text-center styled-link">
+                Read More
+            </a> -->
+            </div>
+            <div class="my-2 pb-4 mx-auto  bg-white shadow" style="width: 30rem; overflow: hidden; border-radius: 1px;" data-aos="fade-up"
+                data-aos-offset="-300" data-aos-delay="600" data-aos-anchor-placement="top-center">
+                <img src=<%=require("./imgs/Tranquil-Breeze-300x200.jpg") %> alt="Description of Image" class="d-block img-fluid">
+                <div class="px-2 py-2">
+                    <p class="mb-0 small text-uppercase mb-1 text-dark text-center cand10">
+                        <svg-icon id="cand10">
+                            <src href=<%=require("./imgs/candle3.svg") %> />
+                        </svg-icon>
+                    </p>
+                    <h2 class="font-weight-normal text-dark text-center mt-0 mb-2" style="line-height: 1.25;">
+                        Tranquil Breeze
+                    </h2>
+                    <p class="mb-1 text-dark text-center">
+                        This fragrance is a blend of coconut, peach and tropical fruits.
+                    </p>
+                </div>
+                <!-- <a href="#0" class="text-uppercase d-inline-block text-center ml-2 mb-2 text-center styled-link">
+                Read More
+            </a> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section 4 Contact Us -->
+    <section class="contact-us-holder parallax parallax-contact " id="contact">
+        <div>
+            <div class="contact-img">
+                <h1 class="text-center text-white ">Contact</h1>
+                <img class="imgclass d-block mx-auto" src=<%=require("./imgs/divider-white.svg") %> alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="contact-us">
+                        <div>
+                            <h2 class="mb-4">Contact Us</h2>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="firstname" class="col-sm-2 col-form-label">First Name</label>
+                                    <div class="">
+                                        <input type="text" name="fname" class="form-control border-primary mt-2" id="firstname" size="45" value="First Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="lastname" class="col-sm-2 col-form-label">Last Name</label>
+                                    <div class="">
+                                        <input type="text" name="lname" class="form-control border-primary mt-2" id="lastname" size="45" value="Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email" class="col-sm-2 col-form-label border-primary">Email</label>
+                                    <div class="">
+                                        <input type="text" name="theemail" class="form-control mt-2" id="email" size="45" placeholder="Email" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="textmsg" class="col-sm-2 col-form-label">Message</label>
+                                    <div class="">
+                                        <textarea class="border-primary mt-3" name="themsg" id="testmsg" cols="35" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="submit" class="col-sm-2 col-form-label">Submit</label>
+                                    <div class="">
+                                        <input type="submit" class="form-control border-primary " id="submit" placeholder="Email">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="address-holder">
+                        <div class="myaddress">
+                            <h3 class="text-center">Address</h3>
+                            <div class="text-left pl-5 ml-4">
+                                3600 S State Rd 7 Suite 333
+                                <br> Miramar, Florida 33023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="footer-holder">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="text-white text-center pt-3">Kypie Tzexoba</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script> -->
+    <!-- <script type="application/javascript">
+        AOS.init();
+    </script> -->
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+</body>
+</html>
