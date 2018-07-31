@@ -6282,6 +6282,8 @@ input:required {
 
 /* animation for header */
 #myheader-title {
+  line-height: 7rem;
+  font-size: 5.5rem;
   -webkit-animation-duration: 2s;
   -moz-animation-duration: 2s;
   -ms-animation-duration: 2s;
