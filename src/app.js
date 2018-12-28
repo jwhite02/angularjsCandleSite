@@ -27,8 +27,8 @@ AOS.init();
 
 const x = document.createElement("p"); // Create a <p> element
 const t = document.createTextNode("This is a cool paragraph."); // Create a text node
-x.appendChild(t); // Append the text to <p>
-document.body.appendChild(x); // Append <p> to <body>
+//x.appendChild(t); // Append the text to <p>
+//document.body.appendChild(x); // Append <p> to <body>
 
 
 // $scope
